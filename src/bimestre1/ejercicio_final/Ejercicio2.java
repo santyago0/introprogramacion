@@ -3,10 +3,9 @@ package ejercicio_final;
 import java.util.Scanner;
 
 /**
- * Realizar un programa que genere y grafique con asteriscos la
- * serie fibonacci. Se debe recibir un número por teclado que indicará
- * el total de números generados para la serie.
- * Ejemplo: 6 -> (se generarán los 6 primeros números de la serie)
+ * Realizar un programa que genere y grafique con asteriscos la serie fibonacci.
+ * Se debe recibir un número por teclado que indicará el total de números generados
+ * para la serie. Ejemplo: 6 -> (se generarán los 6 primeros números de la serie)
  * · Serie generada: 1 1 2 3 5 8
  * · Gráfico: *
  *            *
@@ -31,7 +30,6 @@ public class Ejercicio2 {
             x = fibonacci;
             fibonacci = suma;
         }
-        System.out.println("");
         System.out.println("Gráfico: ");
         fibonacci = 1;
         x = 1;

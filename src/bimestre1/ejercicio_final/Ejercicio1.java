@@ -116,7 +116,7 @@ public class Ejercicio1 {
                             acu_mes++;
                             break;
                         case 2:
-                            if (anio_n % 4 == 0 && anio_n % 100 != 0 || anio_n % 400 == 0) {
+                            if (anio_n%4 == 0 && anio_n%100 != 0 || anio_n%400 == 0) {
                                 while (cont_dia < 29) {
                                     while (cont_dia <= 29) {
                                         cont_dia++;
@@ -147,7 +147,7 @@ public class Ejercicio1 {
                             acu_mes++;
                             break;
                     }
-                    if (cont_dia <= 32 || cont_dia <= 31 || cont_dia <= 30 || cont_dia <= 29)
+                    if (cont_dia<=32 || cont_dia<=31 || cont_dia<=30 || cont_dia<=29)
                         cont_dia = 0;
                     mes_n++;
                 }
@@ -156,7 +156,7 @@ public class Ejercicio1 {
             }
             int bisiesto = 0;
             while (cont_anio < anio) {
-                if (cont_anio % 4 == 0 && cont_anio % 100 != 0 || cont_anio % 400 == 0)
+                if (cont_anio%4 == 0 && cont_anio%100 != 0 || cont_anio%400 == 0)
                     bisiesto++;
                 cont_anio++;
             }
