@@ -1,4 +1,4 @@
-package ejercicio_final;
+package bimestre1.ejercicio_final;
 
 import java.util.Scanner;
 

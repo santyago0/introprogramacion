@@ -1,3 +1,5 @@
+package bimestre1;
+
 import java.util.Scanner;
 
 /**

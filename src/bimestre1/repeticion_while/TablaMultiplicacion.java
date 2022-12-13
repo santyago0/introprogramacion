@@ -1,4 +1,4 @@
-package repeticion_while;
+package bimestre1.repeticion_while;
 
 import javax.swing.JOptionPane;
 

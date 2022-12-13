@@ -1,4 +1,4 @@
-package tarea_casa;
+package bimestre1.tarea_casa;
 
 public class Contenido {
     public static void main(String[] args) {

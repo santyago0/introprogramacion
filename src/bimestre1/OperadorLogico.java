@@ -1,3 +1,5 @@
+package bimestre1;
+
 public class OperadorLogico {
     public static void main(String[] args) {
         System.out.println("PRUBA DE OPERADORES LÓGICOS O BOOLEAN0S");

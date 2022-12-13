@@ -1,4 +1,4 @@
-package estructura_for;
+package bimestre1.estructura_for;
 
 import java.util.Scanner;
 

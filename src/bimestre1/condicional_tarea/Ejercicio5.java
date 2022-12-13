@@ -1,4 +1,4 @@
-package condicional_tarea;
+package bimestre1.condicional_tarea;
 
 import java.util.Scanner;
 

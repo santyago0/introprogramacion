@@ -1,4 +1,4 @@
-package tarea_casa;
+package bimestre1.tarea_casa;
 
 import java.util.Scanner;
 

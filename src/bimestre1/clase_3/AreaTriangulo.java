@@ -1,4 +1,4 @@
-package clase_3;
+package bimestre1.clase_3;
 
 import java.util.Scanner;
 
