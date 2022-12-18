@@ -9,20 +9,18 @@ public class SumaArreglo {
         System.out.println("¿De qué tamaño van a ser los arreglos?");
         int tam_arreglos = teclado.nextInt();
         int numeros1[] = new int[tam_arreglos];
-        System.out.println("Ingrese los  números del primer arreglo");
+        System.out.println("Ingrese los números del primer arreglo");
         for (int indice = 0; indice < numeros1.length; indice++) {
-            int numeros = teclado.nextInt();
-            numeros1[indice] = numeros;
+            numeros1[indice] = teclado.nextInt();
         }
         for (int i = 0; i < numeros1.length; i++) {
             System.out.print(numeros1[i] +"\t");
         }
         System.out.println("");
         int numeros2[] = new int[tam_arreglos];
-        System.out.println("Ingrese los  números del segundo arreglo");
+        System.out.println("Ingrese los números del segundo arreglo");
         for (int indice = 0; indice < numeros2.length; indice++) {
-            int numeros = teclado.nextInt();
-            numeros2[indice] = numeros;
+            numeros2[indice] = teclado.nextInt();
         }
         for (int i = 0; i < numeros2.length; i++) {
             System.out.print(numeros2[i] +"\t");

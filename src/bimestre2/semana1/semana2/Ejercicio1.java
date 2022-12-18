@@ -20,10 +20,9 @@ public class Ejercicio1 {
         int element = teclado.nextInt();
         if (element <= 6) {
             binario = new int[element];
+            System.out.println("Ingrese los elementos del número binario");
             for (int i = 0; i < binario.length; i++) {
-                System.out.println("Ingrese el "+ (i+1) +"º elemento del número binario");
-                int n = teclado.nextInt();
-                binario[i] = n;
+                binario[i] = teclado.nextInt();
             }
             System.out.println("El número binario es: ");
             for (int i = 0; i < binario.length; i++) {
@@ -31,7 +30,19 @@ public class Ejercicio1 {
             }
             System.out.println("");
             System.out.println("TRANSFORMACIÓN: ");
-
+            int mult_transformacion[] = new int[element];
+            for (int i = 0, exponente = mult_transformacion.length-1; i < mult_transformacion.length; i++, exponente--) {
+                int exponete_final = exponente;
+                mult_transformacion[i] = (int)Math.pow(2, exponete_final);
+            }
+            //for (int i = 0; i < mult_transformacion.length; i++) {
+            //    System.out.print(mult_transformacion[i] +"\t");
+            //}
+            int transformacion = 0;
+            for (int i = 0; i < binario.length; i++) {
+                transformacion = transformacion + (binario[i] * mult_transformacion[i]);
+            }
+            System.out.println(transformacion);
         }else {
             System.out.println("El número binario no es posible");
         }
