@@ -16,6 +16,7 @@ public class AreaFigura {
         System.out.println("Digite 3 para calcular el área de un cilindro");
         Scanner teclado = new Scanner(System.in);
         int opcion = teclado.nextInt();
+        seleccionar_figura(opcion);
     }
 
     /**
@@ -28,9 +29,21 @@ public class AreaFigura {
             case 1:
                 System.out.println("Ingrese el valor del radio: ");
                 double radio = teclado.nextDouble();
-                double area = calcular_area_circunferencia(radio);
-                System.out.println("El área es: "+area);
+                double area_circunferencia = calcular_area_circunferencia(radio);
+                System.out.println("El área de la circunferencia es: "+area_circunferencia);
                 break;
+            case 2:
+                System.out.println("Ingrese el valor del lado: ");
+                double lado = teclado.nextDouble();
+                double area_cuadrado = calcular_area_cuadrado(lado);
+                System.out.println("El área del cuadrado es: "+area_cuadrado);
+                break;
+            case 3:
+                System.out.println("Ingrese el valor del radio: ");
+                double radio_c = teclado.nextDouble();
+                System.out.println("Ingrese el valor de la altura: ");
+                double altura_c = teclado.nextDouble();
+                calcular_area_cilindro(radio_c,altura_c);
         }
     }
 
@@ -61,5 +74,6 @@ public class AreaFigura {
      */
     public static void calcular_area_cilindro(double radio, double altura) {
         double area = ((2*Math.PI) * radio * altura) + ((2*Math.PI) * Math.pow(radio, 2));
+        System.out.println("El área del cilindro es: "+area);
     }
 }
