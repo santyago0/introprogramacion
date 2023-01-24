@@ -18,32 +18,56 @@ public class SumaNumero {
         btn_suma.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int suma = Integer.parseInt(txt_n1.getText()) + Integer.parseInt(txt_n2.getText());
-                lbl_resultado.setText(String.valueOf(suma));
+                try {
+                    int suma = Integer.parseInt(txt_n1.getText()) + Integer.parseInt(txt_n2.getText());
+                    lbl_resultado.setText(String.valueOf(suma));
+                }catch (Exception error) {
+                    lbl_resultado.setText(error.getMessage());
+                    txt_n1.setText("");
+                    txt_n2.setText("");
+                }
             }
         });
 
         btn_resta.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int resta = Integer.parseInt(txt_n1.getText()) - Integer.parseInt(txt_n2.getText());
-                lbl_resultado.setText(String.valueOf(resta));
+                try {
+                    int resta = Integer.parseInt(txt_n1.getText()) - Integer.parseInt(txt_n2.getText());
+                    lbl_resultado.setText(String.valueOf(resta));
+                }catch (Exception error) {
+                    lbl_resultado.setText(error.getMessage());
+                    txt_n1.setText("");
+                    txt_n2.setText("");
+                }
             }
         });
 
         btn_multiplicacion.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int multiplicacion = Integer.parseInt(txt_n1.getText()) * Integer.parseInt(txt_n2.getText());
-                lbl_resultado.setText(String.valueOf(multiplicacion));
+                try {
+                    int multiplicacion = Integer.parseInt(txt_n1.getText()) * Integer.parseInt(txt_n2.getText());
+                    lbl_resultado.setText(String.valueOf(multiplicacion));
+                }catch (Exception error) {
+                    lbl_resultado.setText(error.getMessage());
+                    txt_n1.setText("");
+                    txt_n2.setText("");
+                }
             }
         });
 
         btn_division.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double division = Integer.parseInt(txt_n1.getText())/Integer.parseInt(txt_n2.getText());
-                lbl_resultado.setText(String.valueOf(division));
+                try {
+                    double division = Integer.parseInt(txt_n1.getText())/Integer.parseInt(txt_n2.getText());
+                    lbl_resultado.setText(String.valueOf(division));
+                }catch (Exception error) {
+                    lbl_resultado.setText(error.getMessage());
+                    txt_n1.setText("");
+                    txt_n2.setText("");
+                }
             }
         });
     }
